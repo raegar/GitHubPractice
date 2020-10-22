@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace polymorphism
 {
@@ -14,12 +15,20 @@ namespace polymorphism
 
             // Animal section
 
+            List<Animal> animals = new List<Animal>();
+
             Animal animal = new Animal();
             Animal cat = new Cat();
             Animal llama = new Llama();
-            animal.MakeAnimalSound();
-            cat.MakeAnimalSound();
-            llama.MakeAnimalSound();
+
+            animals.Add(animal);
+            animals.Add(cat);
+            animals.Add(llama);
+
+            foreach(Animal a in animals)
+            {
+                a.MakeAnimalSound();
+            }
 
 
         }
