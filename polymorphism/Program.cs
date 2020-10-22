@@ -18,17 +18,21 @@ namespace polymorphism
             List<Animal> animals = new List<Animal>();
 
             Animal animal = new Animal();
-            Animal cat = new Cat();
-            Animal llama = new Llama();
+            Cat cat = new Cat();
+            Llama llama = new Llama();
 
             animals.Add(animal);
             animals.Add(cat);
             animals.Add(llama);
 
+            //Trigger all animals to make sounds
             foreach(Animal a in animals)
             {
                 a.MakeAnimalSound();
             }
+            
+            cat.Jump();
+
 
 
         }

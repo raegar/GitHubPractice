@@ -16,6 +16,11 @@ namespace polymorphism
         {
             Console.WriteLine("Meow Meow");
         }
+
+        public void Jump()
+        {
+            Console.WriteLine("I'm Jumping!");
+        }
     }
 
     class Llama : Animal
